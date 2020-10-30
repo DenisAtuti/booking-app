@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    
+
+    <!-- stylesheet CSS -->
+    <link rel="stylesheet" type="text/css" href="bookingStyle.css">
+
+    <title>Booking App</title>
+  </head>
+  <body>
+      <div class="container box">
+        <div class="px-3 pt-3">
+          <a href="index.html"><i class="fa fa-bars"  style="font-size:48px;color:red"></i></a>
+          <h2 class="display-4 text-center">Get your cleaning today</h3>
+        </div>
+        <form>
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label for="date">Cleaning Date:</label>
+              <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+              <label for="Hours">Hours :</label>
+              <input type="number" id="hours" min="1" max="8" value="2" step="1" data-bind="value:hours" />
+            </div>
+
+            <div class="form-group">
+              <label for="maid">Number of Maids:</label>
+              <input type="number" id="maid" min="1" max="10" value="2" step="1" data-bind="value:maid" />
+            </div>
+
+            <div class="form-group">
+              <p>How often do you need cleaning?<p>
+              <input  type="radio" id="daily" name="time" checked>
+              <label for="daily" >Daily</label>
+              
+              <input type="radio" id="weekly" name="time">
+              <label for="weekly" >Weekly</label>
+              
+              <input type="radio" id="monthly" name="time">
+              <label for="monthly" >Monthly</label>
+            </div>
+
+            <div class="form-group">
+              <label for="maid">Number of Maids:</label>
+              <input type="number" id="maid" min="1" max="10" value="2" step="1" data-bind="value:maid" />
+            </div>
+            <div class="form-group">
+              <p>Kindly provide any other cleaning instructions:</p>
+              <textarea>Some text...</textarea>
+            </div>
+            <div class="form-group">
+              <div  class="center-block text-center">
+                <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+              </div>
+            </div>
+          </form>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
